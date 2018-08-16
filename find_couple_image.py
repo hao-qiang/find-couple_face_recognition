@@ -6,7 +6,7 @@ import sys
 
 
 img_path = sys.argv[1]
-couple_dir = "./data/couple1/"
+couple_dir = "./data/couple/"
 single_dir = "./data/single/"
 
 # extract couple's facial features
