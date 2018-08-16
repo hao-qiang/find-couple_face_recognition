@@ -2,7 +2,7 @@
 
 Find couple in the photo and make the girl up.
 
-![](https://github.com/hao-qiang/find_couple/blob/master/result.png)
+![](https://github.com/hao-qiang/find_couple/blob/master/result.jpg)
 
 ## Requirements
 
@@ -15,7 +15,7 @@ Find couple in the photo and make the girl up.
 
 ### 1. Preparing your data
 
-Two facial images of couple should be put into folder `./data/couple` , boy's image need to be named as `name` (like 'Tony.jpg') and girl's image should be named as `name_` (like 'Pepper_.jpg'), and other people's facial images named as `name` should be put into folder `./data/single` . The `face_recognition` library will extract facial features from these pictures.
+Two facial images of couple should be put into folder `./data/couple` , boy's image need to be named as `name` (like 'Tony.jpg') and girl's image should be named as `name_` (like 'Pepper_.jpg'), and other people's facial images named as `name` (like 'Thor.jpg', 'Steve.jpg') should be put into folder `./data/single` . The `face_recognition` library will extract facial features from these pictures.
 
 ### 2. Run
 
