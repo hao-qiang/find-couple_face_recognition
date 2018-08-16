@@ -19,7 +19,7 @@ Two facial images of couple should be put into folder `./data/couple` , boy's im
 
 ![](https://github.com/hao-qiang/find_couple/blob/master/data.jpg)
 
-### 2. Run
+### 2. Running
 
 If you want to use PC camera to do real-time face recognition, run
 
