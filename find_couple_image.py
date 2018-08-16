@@ -82,9 +82,9 @@ for (top, right, bottom, left), name in zip(face_locations, face_names):
             triangle = np.asarray([face_landmarks_list[0]['bottom_lip']], np.int32)+(left-10,top-10)
             cv2.fillConvexPoly(frame, triangle, (0, 0, 150, 128), lineType=4)
             triangle = np.asarray([face_landmarks_list[0]['left_eye']], np.int32)+(left-10,top-10)
-            cv2.polylines(frame, triangle, True, (0, 0, 0, 255), thickness=2, lineType=4)
+            cv2.polylines(frame, triangle, True, (0, 0, 0, 255), thickness=1)
             triangle = np.asarray([face_landmarks_list[0]['right_eye']], np.int32)+(left-10,top-10)
-            cv2.polylines(frame, triangle, True, (0, 0, 0, 255), thickness=2, lineType=4)
+            cv2.polylines(frame, triangle, True, (0, 0, 0, 255), thickness=1)
             
     # Draw a box around the face
     cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
