@@ -17,6 +17,8 @@ Find couple in the photo and make the girl up.
 
 Two facial images of couple should be put into folder `./data/couple` , boy's image need to be named as `name` (like 'Tony.jpg') and girl's image should be named as `name_` (like 'Pepper_.jpg'), and other people's facial images named as `name` (like 'Thor.jpg', 'Steve.jpg') should be put into folder `./data/single` . The `face_recognition` library will extract facial features from these pictures.
 
+![](https://github.com/hao-qiang/find_couple/blob/master/data.jpg)
+
 ### 2. Run
 
 If you want to use PC camera to do real-time face recognition, run
