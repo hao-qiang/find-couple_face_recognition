@@ -74,17 +74,17 @@ for (top, right, bottom, left), name in zip(face_locations, face_names):
         face_landmarks_list = face_recognition.face_landmarks(frame[top-10:bottom+10,left-10:right+10,:][:,:,::-1])
         if face_landmarks_list!=[]:
             triangle = np.asarray([face_landmarks_list[0]['left_eyebrow']], np.int32)+(left-10,top-10)
-            cv2.fillConvexPoly(frame, triangle, (39, 54, 68, 128), lineType=4)
+            cv2.fillConvexPoly(frame, triangle, (39, 54, 68))
             triangle = np.asarray([face_landmarks_list[0]['right_eyebrow']], np.int32)+(left-10,top-10)
-            cv2.fillConvexPoly(frame, triangle, (39, 54, 68, 128), lineType=4)
+            cv2.fillConvexPoly(frame, triangle, (39, 54, 68))
             triangle = np.asarray([face_landmarks_list[0]['top_lip']], np.int32)+(left-10,top-10)
-            cv2.fillConvexPoly(frame, triangle, (0, 0, 150, 128), lineType=4)
+            cv2.fillConvexPoly(frame, triangle, (0, 0, 150))
             triangle = np.asarray([face_landmarks_list[0]['bottom_lip']], np.int32)+(left-10,top-10)
-            cv2.fillConvexPoly(frame, triangle, (0, 0, 150, 128), lineType=4)
+            cv2.fillConvexPoly(frame, triangle, (0, 0, 150))
             triangle = np.asarray([face_landmarks_list[0]['left_eye']], np.int32)+(left-10,top-10)
-            cv2.polylines(frame, triangle, True, (0, 0, 0, 255), thickness=1)
+            cv2.polylines(frame, triangle, True, (0, 0, 0), thickness=1)
             triangle = np.asarray([face_landmarks_list[0]['right_eye']], np.int32)+(left-10,top-10)
-            cv2.polylines(frame, triangle, True, (0, 0, 0, 255), thickness=1)
+            cv2.polylines(frame, triangle, True, (0, 0, 0), thickness=1)
             
     # Draw a box around the face
     cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
