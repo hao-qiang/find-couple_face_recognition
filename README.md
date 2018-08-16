@@ -2,7 +2,7 @@
 
 Find couple in the photo and make the girl up.
 
-![](https://github.com/hao-qiang/find_couple/blob/master/result.jpg)
+![](https://github.com/hao-qiang/find_couple/blob/master/output.jpg)
 
 ## Requirements
 
