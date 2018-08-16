@@ -27,7 +27,7 @@ If you want to use PC camera to do real-time face recognition, run
 python find_couple_camera.py
 ```
 
-If you want to recognize faces from one photo (like `photo.jpg` ), you should save the photo at script path and run
+If you want to recognize faces from one photo (like `input.jpg` ), you should save the photo at script path and run
 
 ```
 python find_couple_image.py input.jpg
