@@ -28,7 +28,7 @@ python find_couple_camera.py
 If you want to recognize faces from one photo (like `photo.jpg` ), you should save the photo at script path and run
 
 ```
-python find_couple_image.py photo.jpg
+python find_couple_image.py input.jpg
 ```
 
 ## Happy Chinese Valentine's Day!
